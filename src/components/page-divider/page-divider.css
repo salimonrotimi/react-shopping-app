@@ -1,0 +1,298 @@
+.page-divider {
+    max-height: 120vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgb(171, 171, 221) 10%, rgb(32, 32, 230) 100%);
+}
+
+.pages {
+    height: 100vh;
+    display: flex;
+    /* "flex-direction" is "row" by default. No need to specify it */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    row-gap: 50px;
+}
+
+.left-page h2 {
+    color: #090909;
+    font-size: 2rem;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+
+.left-page h3 {
+    padding: 10px 0;
+    color: #070707;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Roboto';
+}
+
+.hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* To shift a flex item beyond its natural position (e.g. top), set its "display" as "flex", 
+    center it, and apply a "negative margin" on it */
+
+.hand-icon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-top: -30px;
+    /* This shift the image above its normal position in the flex */
+}
+
+.collection-btn .collection-btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 320px;
+    max-width: 350px;
+    height: 65px;
+    padding: 25px;
+    border-radius: 40px;
+    border: 1px solid #ef1c7b;
+    background-color: #ff3131;
+    cursor: pointer;
+}
+
+.collection-btn .collection-btn-login div {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 700;
+}
+
+.collection-btn .collection-btn-login img {
+    width: 50px;
+    height: 50px;
+}
+
+.right-page {
+    flex: 1;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MEDIA QUERIES FOR MAX-WIDTH 1280px, 1024px, 780px, 600px, and 440px */
+
+@media(max-width: 1280px) {
+    .pages {
+        height: 90vh;
+    }
+    .left-page {
+        padding-left: 50px;
+        row-gap: 50px;
+    }
+    .left-page h2 {
+        font-size: 1.9rem;
+    }
+    .left-page h3 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    .hand-icon img {
+        width: 90px;
+        margin-top: -20px;
+        /* This shift the image above its normal position in the flex */
+    }
+    .collection-btn .collection-btn-login {
+        width: 300px;
+        height: 60px;
+    }
+    .collection-btn .collection-btn-login div {
+        font-size: 1.3rem;
+    }
+    .collection-btn .collection-btn-login img {
+        width: 45px;
+        height: 45px;
+    }
+    .right-page {
+        margin-right: 50px;
+    }
+    .right-page img {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .left-page {
+        row-gap: 25px;
+    }
+    .left-page h2 {
+        font-size: 1.6rem;
+    }
+    .left-page h3 {
+        font-size: 2.8rem;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .hand-icon img {
+        width: 80px;
+        /* This shift the image above its normal position in the flex */
+    }
+    .collection-btn .collection-btn-login {
+        width: 250px;
+        height: 55px;
+        column-gap: 15px;
+    }
+    .collection-btn .collection-btn-login div {
+        font-size: 1.1rem;
+    }
+    .collection-btn .collection-btn-login img {
+        width: 38px;
+        height: 38px;
+    }
+    .right-page img {
+        max-width: 400px;
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media(max-width: 780px) {
+    .pages {
+        height: 80vh;
+    }
+    .left-page {
+        padding-left: 30px;
+        row-gap: 25px;
+    }
+    .left-page h2 {
+        font-size: 1.3rem;
+    }
+    .left-page h3 {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+    }
+    .hand-icon img {
+        width: 75px;
+        /* This shift the image above its normal position in the flex */
+    }
+    .collection-btn .collection-btn-login {
+        width: 230px;
+        height: 45px;
+    }
+    .collection-btn .collection-btn-login div {
+        font-size: 1rem;
+    }
+    .collection-btn .collection-btn-login img {
+        width: 32px;
+        height: 32px;
+    }
+    .right-page {
+        margin-right: 30px;
+    }
+    .right-page img {
+        max-width: 380px;
+        width: 100%;
+        height: 280px;
+    }
+}
+
+@media(max-width: 600px) {
+    .left-page {
+        padding-left: 20px;
+        row-gap: 20px;
+    }
+    .left-page h2 {
+        font-size: 1.1rem;
+    }
+    .left-page h3 {
+        font-size: 2rem;
+    }
+    .hand-icon img {
+        width: 60px;
+        /* This shift the image above its normal position in the flex */
+    }
+    .collection-btn .collection-btn-login {
+        width: 200px;
+        height: 38px;
+        padding: 10px 15px;
+        column-gap: 10px;
+    }
+    .collection-btn .collection-btn-login div {
+        font-size: 0.95rem;
+    }
+    .collection-btn .collection-btn-login img {
+        width: 25px;
+        height: 25px;
+    }
+    .right-page {
+        margin-right: 20px;
+    }
+    .right-page img {
+        max-width: 350px;
+        width: 100%;
+        height: 240px;
+    }
+}
+
+@media(max-width: 440px) {
+    .page-divider {
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pages {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .left-page {
+        padding: 0 15px;
+        row-gap: 10px;
+    }
+    .left-page h2 {
+        font-weight: 800;
+    }
+    .left-page h3 {
+        font-size: 2rem;
+        margin: 5px 0 20px;
+    }
+    .hand-icon img {
+        width: 58px;
+        /* This shift the image above its normal position in the flex */
+    }
+    .collection-btn .collection-btn-login {
+        width: 100%;
+        border-radius: 10px;
+        column-gap: 15px;
+    }
+    .collection-btn .collection-btn-login div {
+        font-size: 1.1rem;
+    }
+    .collection-btn .collection-btn-login img {
+        width: 28px;
+        height: 28px;
+    }
+    .right-page {
+        display: block;
+        margin: 10px 20px 0;
+    }
+    .right-page img {
+        max-width: 320px;
+        width: 100%;
+    }
+}

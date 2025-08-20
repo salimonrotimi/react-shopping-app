@@ -1,0 +1,259 @@
+.footer {
+    margin: 0 20px;
+    /* top right-left bottom*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 5px -2px black;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-logo p {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    gap: 50px;
+}
+
+ul .footer-links {
+    color: black;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.social-links .links {
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #505050;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-links span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.footer hr {
+    background-color: #e1e1e1;
+    width: 97%;
+    height: 2px;
+    border-radius: 15px;
+    border: none;
+    margin: 15px 0 10px 0;
+}
+
+.footer .copyright {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* MEDIA QUERIES FOR MAX-WIDTH 1280px, 1024px, 780px, 600px, and 440px */
+
+@media (max-width: 1280px) {
+    .footer-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .footer-logo p {
+        font-size: 2rem;
+    }
+    .footer ul {
+        font-size: 1.15rem;
+        gap: 40px;
+    }
+    .social-links {
+        gap: 80px;
+    }
+    .social-links .links {
+        margin: 5px;
+    }
+    .social-links img {
+        width: 35px;
+        height: 35px;
+    }
+    .social-links span {
+        font-size: 1.1rem;
+    }
+    .footer .copyright {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-logo p {
+        font-size: 1.8rem;
+    }
+    .footer ul {
+        font-size: 1.1rem;
+        gap: 35px;
+    }
+    .social-links {
+        gap: 60px;
+    }
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+    .social-links span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .footer-logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .footer-logo p {
+        font-size: 1.6rem;
+    }
+    .footer ul {
+        font-size: 1.1rem;
+        gap: 35px;
+    }
+    .social-links {
+        gap: 40px;
+    }
+    .social-links .links {
+        margin: 5px;
+    }
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+    .social-links span {
+        font-size: 1rem;
+    }
+    .footer .copyright {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-logo img {
+        width: 25px;
+        height: 25px;
+    }
+    .footer-logo p {
+        font-size: 1.4rem;
+    }
+    .footer ul {
+        font-size: 1rem;
+        gap: 30px;
+    }
+    .social-links {
+        gap: 8px;
+    }
+    .social-links .links {
+        margin: 4px;
+    }
+    .social-links img {
+        width: 28px;
+        height: 28px;
+    }
+    .social-links span {
+        font-size: 1rem;
+    }
+    .footer .copyright {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .footer-logo img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-logo p {
+        font-size: 1.2rem;
+    }
+    .footer ul {
+        font-size: 0.8rem;
+        gap: 15px;
+    }
+    .social-links {
+        gap: 15px;
+    }
+    .social-links .links {
+        margin: 2px;
+    }
+    .social-links img {
+        width: 15px;
+        height: 15px;
+    }
+    .social-links span {
+        font-size: 0.82rem;
+    }
+    .footer .copyright {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* FOR VERY SMALL SCREENS*/
+
+@media (max-width: 380px) {
+    .footer-logo img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-logo p {
+        font-size: 1.1rem;
+    }
+    .footer ul {
+        gap: 15px;
+    }
+    .social-links {
+        gap: 12px;
+    }
+    .social-links .links {
+        margin: 1px;
+    }
+    .social-links img {
+        width: 12px;
+        height: 12px;
+    }
+    .social-links span {
+        font-size: 0.7rem;
+    }
+    .footer .copyright {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,220 @@
+.login-register {
+    padding: 100px 20px;
+    background: linear-gradient(90deg, rgb(102, 132, 169) 100%, rgb(102, 132, 169) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-register-container {
+    padding: 30px 40px 28px;
+    /* top left-right bottom */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login-register-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.instruction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.instruction span {
+    margin: 0 5px;
+    text-transform: lowercase;
+}
+
+.login-register-fields {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.login-register-fields p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-register-fields p label {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.login-register-fields p input {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e9e8e8;
+}
+
+.login-register-fields .agree-terms {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.login-register-fields .agree-terms input {
+    width: 20px;
+    height: 20px;
+}
+
+.login-register-fields p button {
+    width: 40%;
+    padding: 0 10px;
+    background-color: #ff3131;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 800;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-register-fields p button:disabled {
+    background-color: #e5e5e5;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.center-login,
+.center-reg {
+    margin: 0 5px;
+    font-weight: 800;
+    color: blue;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES FOR MAX-WIDTH 1280px, 1024px, 780px, 600px, and 440px */
+
+@media (max-width: 1280px) {
+    .login-register-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .login-register-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 780px) {
+    .login-register-container {
+        width: 80%;
+    }
+    .login-register-container h2 {
+        font-size: 1.8rem;
+    }
+    .login-register-fields {
+        width: 85%;
+    }
+    .login-register-fields p label {
+        margin-top: 8px;
+        font-size: 1.3rem;
+    }
+    .login-register-fields p input {
+        font-size: 1.2rem;
+    }
+    .login-register-fields .agree-terms input {
+        width: 17px;
+        height: 17px;
+    }
+    .login-register-fields .agree-terms {
+        font-size: 1rem;
+    }
+    .login-register-fields p button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-register-container {
+        width: 90%;
+    }
+    .login-register-container h2 {
+        font-size: 1.5rem;
+    }
+    .login-register-fields {
+        width: 90%;
+    }
+    .login-register-fields p {
+        gap: 5px;
+    }
+    .login-register-fields p label {
+        margin-top: 8px;
+        font-size: 1rem;
+    }
+    .login-register-fields p input {
+        font-size: 1rem;
+    }
+    .login-register-fields .agree-terms input {
+        width: 15px;
+        height: 15px;
+    }
+    .login-register-fields .agree-terms {
+        margin: 15px 0;
+        font-size: 1rem;
+    }
+    .center-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 440px) {
+    .login-register-container {
+        padding: 24px 28px 22px;
+        width: 94%;
+    }
+    .instruction {
+        font-size: 0.95rem;
+    }
+    .login-register-fields {
+        width: 96%;
+    }
+    .login-register-fields p input {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .login-register-fields p button {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+    .center-text {
+        font-size: 12px;
+    }
+}

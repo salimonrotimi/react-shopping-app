@@ -1,0 +1,53 @@
+.path-detail {
+    margin: 20px 5px 15px;
+    /* top right-left bottom */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #5e5e5e;
+}
+
+.path-detail img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* MEDIA QUERIES FOR MAX-WIDTH 780px, 600px, and 480px */
+
+@media (max-width: 780px) {
+    .path-detail {
+        font-size: 0.8rem;
+        gap: 3px;
+    }
+    .path-detail img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .path-detail {
+        margin: 15px 0;
+        font-size: 0.7rem;
+        gap: 1px;
+    }
+    .path-detail img {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .path-detail {
+        font-size: 0.6rem;
+        gap: 0;
+    }
+    .path-detail img {
+        width: 12px;
+        height: 12px;
+    }
+}

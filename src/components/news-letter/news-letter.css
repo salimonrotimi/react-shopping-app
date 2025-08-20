@@ -1,0 +1,184 @@
+.news-letter {
+    width: 90%;
+    min-height: 60vh;
+    /* makes the height expandable if the child element has a bigger height */
+    margin: 50px auto;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction is row by default. No need to specify it */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(90deg, #fde1ff 10%, #f49292 100%);
+    border-radius: 5px;
+}
+
+.news-letter h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.news-letter p {
+    color: #171717;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 730px;
+    height: 60px;
+    background-color: white;
+    border-radius: 80px;
+}
+
+.subscribe input {
+    width: 75%;
+    /* Occupies 75% of the width of the parent div with class "subscribe" */
+    max-width: 500px;
+    height: 60px;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    color: #616161;
+    border: none;
+    /* turn off the border line of the input */
+    outline: none;
+    /* turn off the outline when the input is under focus */
+    border-radius: 80px;
+    font-family: poppins;
+}
+
+.subscribe button {
+    width: 25%;
+    /* Occupies 25% of the width of the parent div with class "subscribe" */
+    max-width: 230px;
+    height: 60px;
+    border-radius: 80px;
+    border: 1px solid #ef1c7b;
+    background-color: #ff3131;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES FOR MAX-WIDTH 1280px, 1024px, 780px, 600px, and 440px */
+
+@media (max-width: 1280px) {
+    .news-letter {
+        padding: 0 80px;
+    }
+    .news-letter h1 {
+        font-size: 41px;
+    }
+    .news-letter p {
+        font-size: 23px;
+    }
+    .subscribe {
+        height: 55px;
+        border-radius: 70px;
+    }
+    .subscribe input {
+        height: 55px;
+        border-radius: 70px;
+        font-size: 1.3rem;
+    }
+    .subscribe button {
+        height: 55px;
+        border-radius: 70px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .news-letter {
+        height: 0vh;
+        padding: 0 50px;
+    }
+    .news-letter h1 {
+        font-size: 32px;
+    }
+    .news-letter p {
+        font-size: 20px;
+    }
+    .subscribe {
+        height: 50px;
+        border-radius: 60px;
+    }
+    .subscribe input {
+        height: 50px;
+        border-radius: 60px;
+        font-size: 1.2rem;
+    }
+    .subscribe button {
+        height: 50px;
+        border-radius: 60px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 780px) {
+    .news-letter {
+        padding: 0 30px;
+    }
+    .news-letter h1 {
+        font-size: 25px;
+    }
+    .news-letter p {
+        font-size: 17px;
+    }
+    .subscribe {
+        width: 60%;
+        height: 40px;
+        border-radius: 50px;
+    }
+    .subscribe input {
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 50px;
+        font-size: 1rem;
+    }
+    .subscribe button {
+        height: 40px;
+        border-radius: 50px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+    .news-letter {
+        min-height: 50vh;
+        padding: 0 20px;
+    }
+    .news-letter h1,
+    .news-letter p {
+        text-align: center;
+    }
+    .subscribe {
+        width: 70%;
+        height: 35px;
+        border-radius: 40px;
+    }
+    .subscribe input {
+        width: 72%;
+        height: 35px;
+        padding-left: 15px;
+        border-radius: 40px;
+    }
+    .subscribe button {
+        width: 28%;
+        height: 35px;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .subscribe {
+        width: 90%;
+    }
+}

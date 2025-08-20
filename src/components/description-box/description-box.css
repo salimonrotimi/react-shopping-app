@@ -1,0 +1,92 @@
+.description-box {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-box-details {
+    display: flex;
+}
+
+.description-box-header {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+}
+
+.review {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.description-box-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+
+/* MEDIA QUERIES FOR MAX-WIDTH 1280px, 1024px, 780px, 600px, and 440px */
+
+@media (max-width: 1280px) {
+    .description-box-header {
+        width: 145px;
+        height: 58px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .description-box-header {
+        width: 140px;
+        height: 55px;
+        font-size: 1.25rem;
+    }
+    .description-box-description {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .description-box-header {
+        width: 135px;
+        height: 52px;
+        font-size: 1.2rem;
+    }
+    .description-box-description {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .description-box-header {
+        width: 130px;
+        height: 49px;
+        font-size: 1.1rem;
+    }
+    .description-box-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .description-box-header {
+        width: 120px;
+        height: 46px;
+        font-size: 1rem;
+    }
+    .description-box-description {
+        font-size: 0.9rem;
+    }
+}
